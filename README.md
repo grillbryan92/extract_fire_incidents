@@ -4,7 +4,7 @@ I used a MySql MariaDB database as it was the option I already had installed loc
 I assumed that no row at the source is edited after published, so the ETL works incrementally without any deletions at destiny.\
 It's a single file script for the sake of simplicity and avoid import issues which vary with python versions or os (mine is python3).\
 Would have been nicer to have credentials on a config file and also the column's schema on a separate file.\
-At the file setup.sql you'll find the due DDL for the final table.\
+At the file create_table.sql you'll find the due DDL for the final table.\
 Also you'll have to replace 'your_schema' for the correct one on the script.
 
 Work process:\
