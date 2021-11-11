@@ -1,6 +1,6 @@
 
 This script is meant to be executed on demand or on a daily basis as preferred. It will work correctly either way.
-I used a MySql database as it was the option I already had installed locally, although I would have preferred using redshift and S3 for bulk inserts.
+I used a MySql MariaDB database as it was the option I already had installed locally, although I would have preferred using redshift and S3 for bulk inserts.
 I assumed that no row at the source is edited after published, so the ETL works incrementally without any deletions at destiny.
 It's a single file script for the sake of simplicity and avoid import issues which vary with python versions or os (mine is python3).
 Would have been nicer to have credentials on a config file and also the column's schema on a separate file.
